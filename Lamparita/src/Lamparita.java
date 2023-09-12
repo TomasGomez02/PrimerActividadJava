@@ -16,9 +16,13 @@ public class Lamparita {
         state = false;
     }
 
-    public boolean getState()
+    public String getState()
     {
-        return state;   
+        if (state)
+        {
+            return "Encendido";
+        }
+        return "Apagado";
     }
 
     public static void main(String[] args) throws Exception {
